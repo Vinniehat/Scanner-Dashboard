@@ -9,7 +9,9 @@
         "host": "Vinniehat",
         "openmhz": "https://openmhz.com/system/mcsdr",
         "broadcastify": "https://openmhz.com/system/mcsdr",
-        "description": "Servicing Monroe County, New York. Some departments include Monroe County Sheriff's Office, Rochester Police Department, Henrietta Fire Department, RIT Public Safety, Monroe Community College, University of Rochester, and more."
+        "description": "Servicing Monroe County, New York. Some departments include Monroe County Sheriff's Office, Rochester Police Department, Henrietta Fire Department, RIT Public Safety, Monroe Community College, University of Rochester, and more.",
+        "radioreference_county": "https://www.radioreference.com/db/browse/ctid/1790",
+        "radioreference_system": "https://www.radioreference.com/db/sid/7021"
       }
     ]
   },
@@ -23,8 +25,8 @@
         "host": "Unknown",
         "openmhz": "https://openmhz.com/system/mcsdr",
         "broadcastify": "https://openmhz.com/system/mcsdr",
-        "radioreference-county": "https://www.radioreference.com/db/browse/ctid/1790",
-        "radioreference-system": "https://www.radioreference.com/db/sid/7021",
+        "radioreference_county": "https://www.radioreference.com/db/browse/ctid/1790",
+        "radioreference_system": "https://www.radioreference.com/db/sid/7021",
         "description": "Servicing Union County, New Jersey and local FM/N frequencies. Please note that NJSP and any government-affiliated agency will be on NJICS. Local EMS and Fire may operate on FM/N. Check RadioReference for more details."
       },
       {
@@ -34,8 +36,8 @@
         "host": "Unknown",
         "openmhz": "https://openmhz.com/system/mcsdr",
         "broadcastify": "https://openmhz.com/system/mcsdr",
-        "radioreference-county": "",
-        "radioreference-system": "https://www.radioreference.com/db/sid/7021",
+        "radioreference_county": "",
+        "radioreference_system": "https://www.radioreference.com/db/sid/7021",
         "description": "Servicing the entire state of New Jersey on the New Jersey Interoperability Communications System (NJICS). Local agencies may operate on FM/N frequencies and will not be on NJICS. Check RadioReference for more details."
       },
       {
@@ -45,8 +47,8 @@
         "host": "Unknown",
         "openmhz": "s",
         "broadcastify": "s",
-        "radioreference-county": "https://www.radioreference.com/db/browse/ctid/1785",
-        "radioreference-system": "https://www.radioreference.com/db/sid/7021",
+        "radioreference_county": "https://www.radioreference.com/db/browse/ctid/1785",
+        "radioreference_system": "https://www.radioreference.com/db/sid/7021",
         "description": "Servicing Ocean County, New Jersey. Some departments include Ocean County Sheriff's Office, Toms River Police Department, Long Beach Island Emergency Services (Surf City Police Department, Beach Haven First Aid Squad), Lakewood Police Department, and Brick Township Police Department."
       }
     ]
@@ -61,8 +63,8 @@
         "host": "Unknown",
         "openmhz": "",
         "broadcastify": "https://www.broadcastify.com/listen/feed/32494",
-        "radioreference-county": "https://www.radioreference.com/apps/db/?ctid=1790",
-        "radioreference-system": "https://www.radioreference.com/apps/db/?sid=7021",
+        "radioreference_county": "https://www.radioreference.com/apps/db/?ctid=1790",
+        "radioreference_system": "https://www.radioreference.com/apps/db/?sid=7021",
         "description": "Servicing Northampton County, Pennsylvania. Some departments include Northampton County Sheriff's Department, Bethlehem/Township Police Department, Allentown Police Department, Easton Police Department, Palmer Fire Department, and more. Please note that Northampton Area Community College's Public Safety & Call Box are DMR."
       }
     ]
