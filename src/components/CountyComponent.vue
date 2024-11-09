@@ -24,6 +24,18 @@ function openOpenMhz() {
 function openBroadcastify() {
   window.open(props.broadcastify, '_blank');
 }
+
+function openWaze() {
+  window.open(props.waze, '_blank');
+}
+
+function openRadioReferencePrim() {
+  window.open(props.radioreference_prim, '_blank');
+}
+
+function openRadioReferenceSec() {
+  window.open(props.radioreference_sec, '_blank');
+}
 </script>
 
 <template>
@@ -49,10 +61,10 @@ function openBroadcastify() {
       <template #footer>
         <div class="radio-sources">
           <Button :disabled="!props.openmhz" type="button" @click="openOpenMhz" label="OpenMHZ" severity="danger" />
-          <Button :disabled="!props.radioreference_prim" type="button" label="RadioReference" severity="help" />
-<!--          <Button :disabled="!props.radioreference_sec" type="button" label="RadioReference (System)" severity="info" />-->
-          <Button :disabled="!props.broadcastify" type="button" label="Broadcastify" severity="warn" />
-          <Button :disabled="!props.waze" type="button" label="Waze" severity="info" />
+          <Button :disabled="!props.radioreference_prim" type="button" @click="openRadioReferencePrim" label="RadioReference" severity="help" />
+<!--          <Button :disabled="!props.radioreference_sec" type="button" @click="openRadioReferenceSec" label="RadioReference (System)" severity="info" />-->
+          <Button :disabled="!props.broadcastify" type="button" @click="openBroadcastify" label="Broadcastify" severity="warn" />
+          <Button :disabled="!props.waze" type="button" @click="openWaze" label="Waze" severity="info" />
         </div>
       </template>
     </Card>
