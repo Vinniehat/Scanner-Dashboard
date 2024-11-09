@@ -7,7 +7,7 @@ const error = ref(null);
 
 async function fetchStates() {
   try {
-    const response = await fetch('./src/counties.json');
+    const response = await fetch('/counties.json');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

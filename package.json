@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "express": "^4.21.1",
     "pinia": "^2.2.6",
     "primevue": "^4.2.1",
     "tailwindcss-primeui": "^0.3.4",
