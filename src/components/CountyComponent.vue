@@ -12,8 +12,9 @@ const props = defineProps({
   description: String,
   openmhz: String,
   broadcastify: String,
-  radioreference_county: String,
-  radioreference_system: String,
+  radioreference_prim: String,
+  radioreference_sec: String,
+  waze: String
 });
 
 function openOpenMhz() {
@@ -43,11 +44,15 @@ function openBroadcastify() {
         <div class="content-wrapper">
           <p class="m-0">{{ props.description }}</p>
         </div>
-        <div class="radio-sources grid grid-cols-6">
-          <Button v-if="props.openmhz" type="button" @click="openOpenMhz" label="OpenMHZ" severity="danger" />
-          <Button v-if="props.radioreference_county" type="button" label="RadioReference (County)" severity="info" />
-          <Button v-if="props.radioreference_system" type="button" label="RadioReference (System)" severity="info" />
-          <Button v-if="props.broadcastify" type="button" label="Broadcastify" severity="warn" />
+      </template>
+
+      <template #footer>
+        <div class="radio-sources">
+          <Button :disabled="!props.openmhz" type="button" @click="openOpenMhz" label="OpenMHZ" severity="danger" />
+          <Button :disabled="!props.radioreference_prim" type="button" label="RadioReference" severity="help" />
+<!--          <Button :disabled="!props.radioreference_sec" type="button" label="RadioReference (System)" severity="info" />-->
+          <Button :disabled="!props.broadcastify" type="button" label="Broadcastify" severity="warn" />
+          <Button :disabled="!props.waze" type="button" label="Waze" severity="info" />
         </div>
       </template>
     </Card>
@@ -56,8 +61,6 @@ function openBroadcastify() {
 
 <style scoped>
 .county-card {
-  display: flex;
-  flex-direction: column;
   height: 100%;
 }
 
@@ -68,13 +71,26 @@ function openBroadcastify() {
 }
 
 .content-wrapper {
-  flex-grow: 1; /* Allows content to take up space and push buttons to bottom */
-  margin-bottom: 1rem; /* Space between description and buttons */
+  flex-grow: 1;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .radio-sources {
-  display: flex;
-  justify-content: space-between;
-  margin-top: auto; /* Forces buttons to bottom */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Ensure 6 columns */
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+@media (max-width: 600px) {
+  .radio-sources {
+    grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+    justify-content: center;
+  }
 }
 </style>

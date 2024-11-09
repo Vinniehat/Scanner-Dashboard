@@ -10,8 +10,9 @@
         "openmhz": "https://openmhz.com/system/mcsdr",
         "broadcastify": "https://openmhz.com/system/mcsdr",
         "description": "Servicing Monroe County, New York. Some departments include Monroe County Sheriff's Office, Rochester Police Department, Henrietta Fire Department, RIT Public Safety, Monroe Community College, University of Rochester, and more.",
-        "radioreference_county": "https://www.radioreference.com/db/browse/ctid/1790",
-        "radioreference_system": "https://www.radioreference.com/db/sid/7021"
+        "radioreference_prim": "https://www.radioreference.com/db/sid/7308",
+        "radioreference_sec": "https://www.radioreference.com/db/sid/7308",
+        "waze": "https://www.waze.com/live-map/directions?from=place.ChIJXXYP0I-w1okRe6s6YQ1JZnw"
       }
     ]
   },
@@ -24,9 +25,10 @@
         "name": "Union County Public Safety",
         "host": "Unknown",
         "openmhz": "https://openmhz.com/system/mcsdr",
-        "broadcastify": "https://openmhz.com/system/mcsdr",
-        "radioreference_county": "https://www.radioreference.com/db/browse/ctid/1790",
-        "radioreference_system": "https://www.radioreference.com/db/sid/7021",
+        "broadcastify": "https://www.broadcastify.com/listen/ctid/1790",
+        "radioreference_prim": "https://www.radioreference.com/db/browse/ctid/1790",
+        "radioreference_sec": "https://www.radioreference.com/db/sid/7021",
+        "waze": "https://www.waze.com/live-map/directions?from=place.ChIJE1ZD4HK6w4kRXelsizO4rG4",
         "description": "Servicing Union County, New Jersey and local FM/N frequencies. Please note that NJSP and any government-affiliated agency will be on NJICS. Local EMS and Fire may operate on FM/N. Check RadioReference for more details."
       },
       {
@@ -34,22 +36,24 @@
         "type": "FM, FMN, P25, P25e",
         "name": "New Jersey Interoperability Communications System (NJICS)",
         "host": "Unknown",
-        "openmhz": "https://openmhz.com/system/mcsdr",
+        "openmhz": "https://openmhz.com/system/njicsunion",
         "broadcastify": "https://openmhz.com/system/mcsdr",
-        "radioreference_county": "",
-        "radioreference_system": "https://www.radioreference.com/db/sid/7021",
-        "description": "Servicing the entire state of New Jersey on the New Jersey Interoperability Communications System (NJICS). Local agencies may operate on FM/N frequencies and will not be on NJICS. Check RadioReference for more details."
+        "radioreference_prim": "https://www.radioreference.com/db/sid/7021",
+        "radioreference_sec": "https://www.radioreference.com/db/sid/7021",
+        "description": "Servicing the entire state of New Jersey on the New Jersey Interoperability Communications System (NJICS). Local agencies may operate on FM/N frequencies and will not be on NJICS. Check RadioReference for more details.",
+        "waze": "https://www.waze.com/live-map/directions?from=place.ChIJn0AAnpX7wIkRjW0_-Ad70iw"
       },
       {
         "location": "Ocean County, New Jersey",
-        "type": "FM, FMN, P25, P25e, DMR, DMRe",
+        "type": "AM, FM, FMN, P25, P25e, DMR, DMRe",
         "name": "Ocean County Public Safety",
         "host": "Unknown",
-        "openmhz": "s",
-        "broadcastify": "s",
-        "radioreference_county": "https://www.radioreference.com/db/browse/ctid/1785",
-        "radioreference_system": "https://www.radioreference.com/db/sid/7021",
-        "description": "Servicing Ocean County, New Jersey. Some departments include Ocean County Sheriff's Office, Toms River Police Department, Long Beach Island Emergency Services (Surf City Police Department, Beach Haven First Aid Squad), Lakewood Police Department, and Brick Township Police Department."
+        "openmhz": "https://openmhz.com/system/ocnjtrs",
+        "broadcastify": "https://www.broadcastify.com/listen/ctid/1785",
+        "radioreference_prim": "https://www.radioreference.com/db/browse/ctid/1785",
+        "radioreference_sec": "https://www.radioreference.com/db/sid/7021",
+        "description": "Servicing Ocean County, New Jersey. Some departments include Ocean County Sheriff's Office, Toms River Police Department, Long Beach Island Emergency Services (Surf City Police Department, Beach Haven First Aid Squad), Lakewood Police Department, and Brick Township Police Department.",
+        "waze": "https://www.waze.com/live-map/directions?from=place.ChIJh7ZJcChswYkRWgFmCdLUJYw"
       }
     ]
   },
@@ -58,14 +62,15 @@
     "counties": [
       {
         "location": "Northampton County, Pennsylvania",
-        "type": "FM, FMN",
+        "type": "FM, FMN, P25 Phase I, Motorola TRBO, DMR",
         "name": "Northampton County Public Safety",
         "host": "Unknown",
         "openmhz": "",
         "broadcastify": "https://www.broadcastify.com/listen/feed/32494",
-        "radioreference_county": "https://www.radioreference.com/apps/db/?ctid=1790",
-        "radioreference_system": "https://www.radioreference.com/apps/db/?sid=7021",
-        "description": "Servicing Northampton County, Pennsylvania. Some departments include Northampton County Sheriff's Department, Bethlehem/Township Police Department, Allentown Police Department, Easton Police Department, Palmer Fire Department, and more. Please note that Northampton Area Community College's Public Safety & Call Box are DMR."
+        "radioreference_prim": "https://www.radioreference.com/apps/db/?ctid=2288",
+        "radioreference_sec": "https://www.radioreference.com/apps/db/?sid=7021",
+        "description": "Servicing Northampton County, Pennsylvania. Some departments include Northampton County Sheriff's Department, Bethlehem/Township Police Department, Allentown Police Department, Easton Police Department, Palmer Fire Department, and more. Please note that NCAAC and Lafayette are both DMR.",
+        "waze": "https://www.waze.com/live-map/directions?from=place.ChIJexs0vPAWxIkRlPV5q6zFZ1o"
       }
     ]
   }

@@ -43,6 +43,9 @@ onMounted(() => {
               :openmhz="county.openmhz"
               :broadcastify="county.broadcastify"
               :description="county.description"
+              :radioreference_prim="county.radioreference_prim"
+              :radioreference_sec="county.radioreference_sec"
+              :waze="county.waze"
           />
         </div>
       </div>
@@ -53,9 +56,20 @@ onMounted(() => {
 <style scoped>
 .counties {
   display: grid;
-  align-items: stretch;
+  gap: 1rem;
 }
-.error {
-  color: red;
+
+/* Medium screens Prev. 768px */
+@media (max-width: 1024px) {
+  .counties {
+    grid-template-columns: repeat(1, minmax(200px, 1fr)); /* 2 columns for tablets */
+  }
+}
+
+/* Small screens */
+@media (max-width: 1024px) {
+  .counties {
+    grid-template-columns: repeat(1, minmax(200px, 1fr)); /* 1 column for mobile */
+  }
 }
 </style>

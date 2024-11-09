@@ -6,7 +6,7 @@
 @import "tailwindcss/utilities";
 
 #app {
-  max-width: 1920px;
+  max-width: 85%;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
