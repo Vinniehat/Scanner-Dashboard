@@ -1,4 +1,15 @@
 <script>
+import {defineComponent} from "vue";
+import {Message} from "primevue";
+
+export default defineComponent({
+  components: { Message },
+  data() {
+    return {
+      alertActive: true
+    };
+  }
+})
 </script>
 
 <template>
@@ -6,7 +17,18 @@
     <p class="text-gray-200 text-center text-5xl">PulseHub</p>
     <p class="text-gray-400 text-center text-xl">A place to scan your local area for <span class="text-blue-500">police</span>, <span class="text-red-500">fire</span>, and
       <span class="text-gradient">EMS</span> traffic.</p>
-<!--    <div class="container">-->
+
+    <br>
+
+      <div v-if="alertActive" class="card flex flex-wrap gap-4 justify-center">
+        <Message severity="warn" style="width: 100%">Alert: Reports of a generator explosion on a construction site at Rochester Institute of Technology. Emergency services
+          are on the scene. Talkgroup 3070. Time: 0900 - 11/13</Message>
+        <br>
+      </div>
+
+
+
+    <!--    <div class="container">-->
 <!--      <div class="content">-->
 <!--        <div class="heart-rate">-->
 <!--          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="73px" viewBox="0 0 150 73"-->

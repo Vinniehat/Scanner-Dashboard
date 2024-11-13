@@ -6,6 +6,18 @@
         "location": "Monroe County, New York",
         "type": "APCO-Project 25 Phase II",
         "name": "Monroe County East Simulcast",
+        "host": "Unknown",
+        "openmhz": "https://openmhz.com/system/monroecony",
+        "broadcastify": "https://www.broadcastify.com/listen/ctid/1852",
+        "description": "Servicing Monroe County, New York. Some departments include Monroe County Sheriff's Office, Rochester Police Department, Henrietta Fire Department, RIT Public Safety, Monroe Community College, University of Rochester, and more.",
+        "radioreference_prim": "https://www.radioreference.com/db/sid/7308",
+        "radioreference_sec": "https://www.radioreference.com/db/sid/7308",
+        "waze": "https://www.waze.com/live-map/directions?from=place.ChIJXXYP0I-w1okRe6s6YQ1JZnw"
+      },
+      {
+        "location": "Monroe County, New York",
+        "type": "APCO-Project 25 Phase II",
+        "name": "Monroe County East Simulcast",
         "host": "Vinniehat",
         "openmhz": "https://openmhz.com/system/mcsdr",
         "broadcastify": "https://www.broadcastify.com/listen/ctid/1852",
